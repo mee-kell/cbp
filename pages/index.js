@@ -1,85 +1,84 @@
 import React from 'react'
 import Head from 'next/head'
-import Nav from '../components/nav'
+import HomeNav from '../components/home-nav'
 
 const Home = () => (
-  <div>
+  <div className="home">
     <Head>
       <title>Home</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Nav />
+    <HomeNav />
 
-    <div className="hero">
-      <h1 className="title">Welcome to Next.js!</h1>
-      <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
-
-      <div className="row">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Learn more about Next.js in the documentation.</p>
-        </a>
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Next.js Learn &rarr;</h3>
-          <p>Learn about Next.js by following an interactive tutorial!</p>
-        </a>
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Find other example boilerplates on the Next.js GitHub.</p>
-        </a>
-      </div>
+    <div className="menu">
+      <a href="/relax" className="card" id="relax">
+        <h3>Relax</h3>
+        <p>Meditate and unwind.</p>
+      </a>
+      <a href="/schedule" className="card" id="schedule">
+        <h3>Schedule</h3>
+        <p>Organise your time wisely.</p>
+      </a>
+      <a href="/self-care" className="card" id="self-care">
+        <h3>Self-care</h3>
+        <p>Check your mental health.</p>
+      </a>
+      <a href="/choco" className="card" id="choco">
+        <h3>Contribute</h3>
+        <p>Join the Choco Project.</p>
+      </a>
     </div>
 
     <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
+      .home {
+        background: #26A8E2;
+        width: 100vw;
+        height: 99vh;
+        margin: 0 auto;
       }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+      .menu {
+        height: 78vh;
+        background: white;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        border-radius: 30px 30px 0 0;
       }
       .card {
-        padding: 18px 18px 24px;
-        width: 220px;
+        padding: 20px;
+        width: 75%;
+        min-width: 250px;
+        height: 15%;
+        margin: auto;
+        margin-bottom: 30px;
+        display: block;
         text-align: left;
         text-decoration: none;
         color: #434343;
-        border: 1px solid #9b9b9b;
+        background: white;
+        border-radius: 15px;
       }
-      .card:hover {
-        border-color: #067df7;
+      #relax {
+        background: #9CD7EF;
+      }
+      #schedule {
+        background: #E89492;
+      }
+      #self-care {
+        background: #DCDCD2;
+      }
+      #choco {
+        background: #2A4C58;
+        color: whitesmoke;
       }
       .card h3 {
         margin: 0;
-        color: #067df7;
-        font-size: 18px;
+        font-size: 35px;
       }
       .card p {
         margin: 0;
         padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
+        font-size: 18px;
       }
     `}</style>
   </div>
