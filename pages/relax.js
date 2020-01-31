@@ -20,7 +20,7 @@ const Relax = () => (
 
     <style jsx>{`
       .relax {
-        background: #9CD7EF;
+        background: #42c8f5;
         width: 100vw;
         height: 100vh;
         margin: 0 auto;

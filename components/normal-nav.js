@@ -47,7 +47,7 @@ const NormalNav = props => (
       .title {
         margin: 8px;
         margin-right: 0;
-        font-size: 3vh;
+        font-size: 2.5vh;
         color: white;
         background: black;
         height: 8vh;
@@ -55,7 +55,7 @@ const NormalNav = props => (
         display: block;
       }
       p {
-        margin-top: -2vh;
+        margin-top: -1.5vh;
         padding-right: 5vw;
         text-align: right;
       }

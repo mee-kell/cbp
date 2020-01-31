@@ -1,0 +1,45 @@
+.motionDiv {
+  width: 77vw;
+  height: 37vh;
+  margin: 0 auto;
+  margin-top: 5vh;
+  border-radius: 20px 20px 0 0;
+  background-color: #f5c842;
+  padding: 20px;
+  text-align: center;
+}
+
+.motionDiv p {
+  font-size: 18px;
+}
+
+.motionDiv h1 {
+  font-size: 25px;
+}
+
+.start {
+  color: black;
+  font-size: 25px;
+  width: 30vw;
+  height: 5vh;
+  margin-top: 1vh;
+  border-radius: 10px;
+  background-color: white;
+  border: 0px;
+}
+
+.press {
+  color: black;
+  font-size: 15px;
+  width: 30vw;
+  height: 5vh;
+  margin: 2vh;
+  border-radius: 10px;
+  background-color: white;
+  border: 0;
+}
+
+.button:hover, .button:active, .press:hover, .press:active {
+  background-color: black;
+  color: white;
+}

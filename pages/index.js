@@ -21,7 +21,7 @@ const Home = () => (
         <p>Organise your time wisely.</p>
       </a>
       <a href="/self-care" className="card" id="self-care">
-        <h3>Self-care</h3>
+        <h3>Well-being</h3>
         <p>Check your mental health.</p>
       </a>
       <a href="/choco" className="card" id="choco">
@@ -59,16 +59,16 @@ const Home = () => (
         border-radius: 15px;
       }
       #relax {
-        background: #9CD7EF;
+        background: #42c8f5;
       }
       #schedule {
-        background: #E89492;
+        background: #f56942;
       }
       #self-care {
-        background: #DCDCD2;
+        background: #f5c842;
       }
       #choco {
-        background: #2A4C58;
+        background: #2254ab;
         color: whitesmoke;
       }
       .card h3 {
