@@ -1,6 +1,7 @@
 import React from "react";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import ChangingProgressProvider from "./ChangingProgressProvider";
+import {motion} from 'framer-motion';
 
 let secondsArray = new Array(1500);
 for (let i = 0; i < 1500; i++) {
@@ -42,9 +43,11 @@ class Timer extends React.Component {
             )}
           </ChangingProgressProvider>
 
-          <div className="button-box">
-            <button onClick={this.hideTimer}></button>
-          </div>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }}>
+            <div className="button-box">
+              <button onClick={this.hideTimer}></button>
+            </div>
+          </motion.div>
 
           <style>{`
 
@@ -110,8 +113,9 @@ class Timer extends React.Component {
 
       return (
 
-        <div className="button-box">
-          <button onClick={this.showTimer}></button>
+        <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 1.1 }}>
+          <div className="button-box">
+            <button onClick={this.showTimer}></button>
 
           <style>{`
             button {
@@ -137,7 +141,9 @@ class Timer extends React.Component {
             }
 
           `}</style>
-        </div>
+
+          </div>
+        </motion.div>
       );
 
     }

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import NormalNav from '../components/normal-nav'
 import Content from '../components/content'
 import Timer from '../components/timer'
-import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Schedule = () => {
 
@@ -22,7 +22,9 @@ const Schedule = () => {
         <h1>Pomodoro Timer</h1>
         <h3>Find it hard to stop procrastinating? Try the Pomodoro Timer Technique.</h3>
 
-        <Timer />
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1, duration: 2 }}>
+          <Timer />
+        </motion.div>
 
         <div className="instructions">
           <p>

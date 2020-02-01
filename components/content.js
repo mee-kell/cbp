@@ -1,6 +1,12 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Content = props => (
+  <motion.div
+    initial={{ y: 500 }}
+    animate={{ y: 0 }}
+    transition={{ ease: "easeOut", duration: 1.5 }}
+  >
   <div>
     {props.children}
 
@@ -14,6 +20,7 @@ const Content = props => (
     `}</style>
     
   </div>
+  </motion.div>
 )
 
 export default Content

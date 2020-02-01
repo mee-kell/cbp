@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import Head from 'next/head'
 import HomeNav from '../components/home-nav'
 
@@ -11,31 +12,52 @@ const Home = () => (
 
     <HomeNav />
 
-    <div className="menu">
-      <a href="/relax" className="card" id="relax">
-        <h3>Relax</h3>
-        <p>Meditate and unwind.</p>
-      </a>
-      <a href="/schedule" className="card" id="schedule">
-        <h3>Schedule</h3>
-        <p>Organise your time wisely.</p>
-      </a>
-      <a href="/self-care" className="card" id="self-care">
-        <h3>Well-being</h3>
-        <p>Check your mental health.</p>
-      </a>
-      <a href="/choco" className="card" id="choco">
-        <h3>Contribute</h3>
-        <p>Join the Choco Project.</p>
-      </a>
-    </div>
+    <motion.div
+      initial={{ y: 500 }}
+      animate={{ y: 0 }}
+      transition={{ ease: "easeOut", duration: 1.5 }}
+    >
+      <div className="menu">
+
+        <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 1.1}}>
+          <a href="/relax" className="card" id="relax">
+            <h3>Relax</h3>
+            <p>Meditate and unwind.</p>
+          </a>
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }}>
+          <a href="/schedule" className="card" id="schedule">
+            <h3>Schedule</h3>
+            <p>Organise your time wisely.</p>
+          </a>
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }}>
+          <a href="/self-care" className="card" id="self-care">
+            <h3>Well-being</h3>
+            <p>Check your mental health.</p>
+          </a>
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }}>
+          <a href="/choco" className="card" id="choco">
+            <h3>Contribute</h3>
+            <p>Join the Choco Project.</p>
+          </a>
+        </motion.div>
+
+      </div>
+
+    </motion.div>
 
     <style jsx>{`
       .home {
         background: #26A8E2;
         width: 100vw;
-        height: 99vh;
+        height: 100vh;
         margin: 0 auto;
+        overflow: hidden;
       }
       .menu {
         height: 78vh;
@@ -46,9 +68,9 @@ const Home = () => (
       }
       .card {
         padding: 20px;
-        width: 75%;
+        width: 75vw;
         min-width: 250px;
-        height: 15%;
+        height: 12vh;
         margin: auto;
         margin-bottom: 30px;
         display: block;
@@ -81,6 +103,7 @@ const Home = () => (
         font-size: 18px;
       }
     `}</style>
+
   </div>
 )
 

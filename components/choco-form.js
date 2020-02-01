@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {motion} from 'framer-motion';
 
 const ChocoForm = () => {
   const [contact, setContact] = useState({
@@ -48,6 +49,9 @@ const ChocoForm = () => {
   };
 
   return (
+
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2, duration: 1.5 }}>
+
     <div className = "form">
     
     <div className='form-content'>
@@ -143,6 +147,8 @@ const ChocoForm = () => {
       `}</style>
 
     </div>
+
+    </motion.div>
 
   );
 };

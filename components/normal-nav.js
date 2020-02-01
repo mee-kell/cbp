@@ -1,17 +1,26 @@
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const NormalNav = props => (
   <nav>
     <ul>
       <li>
-        <Link href="/">
-          <a><img src="/logo.png"/></a>
-        </Link>
+        <motion.div whileHover={{ rotate: 720 }} whileTap={{ rotate: 720 }} transition={{ duration: 0.8 }}>
+          <Link href="/">
+            <a><img src="/logo.png"/></a>
+          </Link>
+        </motion.div>
       </li>
+      <motion.div
+        initial={{ x: 500 }}
+        animate={{ x: 0 }}
+        transition={{duration: 1}}
+      >
       <li className="title">
-        <p>{props.children}</p>
+          <p>{props.children}</p>
       </li>
+      </motion.div>
     </ul>
 
     <style jsx>{`
@@ -45,19 +54,20 @@ const NormalNav = props => (
         display: flex;
       }
       .title {
-        margin: 8px;
+        margin-top: -1.5vh;
         margin-right: 0;
         font-size: 2.5vh;
         color: white;
         background: black;
-        height: 8vh;
+        height: 7vh;
         width: 66vw;
         display: block;
       }
       p {
-        margin-top: -1.5vh;
         padding-right: 5vw;
         text-align: right;
+        position: relative;
+        top: 10px;
       }
     `}</style>
   </nav>

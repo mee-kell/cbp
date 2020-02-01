@@ -1,13 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const HomeNav = () => (
   <nav>
     <ul>
       <li>
-        <Link href="/">
-          <a><img src="/logo.png" /></a>
-        </Link>
+        <motion.div whileHover={{ rotate: 720 }} whileTap={{ rotate: 720 }} transition={{ duration: 0.8 }}>
+          <Link href="/">
+            <a><img src="/logo.png" /></a>
+          </Link>
+        </motion.div>
       </li>
       <li>
         <p id="welcome">Code Blue</p>
@@ -51,6 +54,9 @@ const HomeNav = () => (
         color: white;
         text-decoration: none;
         font-size: 20px;
+      }
+      a:hover, a:active {
+        color: black;
       }
       #about-text {
         position: absolute;
