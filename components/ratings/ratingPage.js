@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import StarRating from './rating';
 import CodeBlueRef from '../../firebase';
 import firebase from 'firebase';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 class RatingPage extends Component {
 
@@ -40,7 +40,7 @@ class RatingPage extends Component {
           />
         </div>
 
-        <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 1.1}}>
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }}>
           <div className="actions">
             <button type="submit" onClick={this.saveRating}>
               Submit

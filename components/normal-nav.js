@@ -8,18 +8,18 @@ const NormalNav = props => (
       <li>
         <motion.div whileHover={{ rotate: 720 }} whileTap={{ rotate: 720 }} transition={{ duration: 0.8 }}>
           <Link href="/">
-            <a><img src="/logo.png"/></a>
+            <a><img src="/logo.png" /></a>
           </Link>
         </motion.div>
       </li>
       <motion.div
         initial={{ x: 500 }}
         animate={{ x: 0 }}
-        transition={{duration: 1}}
+        transition={{ duration: 1 }}
       >
-      <li className="title">
+        <li className="title">
           <p>{props.children}</p>
-      </li>
+        </li>
       </motion.div>
     </ul>
 

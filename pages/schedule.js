@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const Schedule = () => {
 
-  return(
+  return (
     <div className="schedule">
       <Head>
         <title>Schedule</title>

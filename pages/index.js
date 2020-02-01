@@ -19,28 +19,28 @@ const Home = () => (
     >
       <div className="menu">
 
-        <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 1.1}}>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
           <a href="/relax" className="card" id="relax">
             <h3>Relax</h3>
             <p>Meditate and unwind.</p>
           </a>
         </motion.div>
 
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }}>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
           <a href="/schedule" className="card" id="schedule">
             <h3>Schedule</h3>
             <p>Organise your time wisely.</p>
           </a>
         </motion.div>
 
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }}>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
           <a href="/self-care" className="card" id="self-care">
             <h3>Well-being</h3>
             <p>Check your mental health.</p>
           </a>
         </motion.div>
 
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }}>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
           <a href="/choco" className="card" id="choco">
             <h3>Contribute</h3>
             <p>Join the Choco Project.</p>
@@ -56,11 +56,13 @@ const Home = () => (
         background: #26A8E2;
         width: 100vw;
         height: 100vh;
+        min-height: 600px;
         margin: 0 auto;
-        overflow: hidden;
+        overflow-x: hidden;
       }
       .menu {
         height: 78vh;
+        min-height: 600px;
         background: white;
         padding-top: 5vh;
         padding-bottom: 5vh;
@@ -71,6 +73,7 @@ const Home = () => (
         width: 75vw;
         min-width: 250px;
         height: 12vh;
+        min-height: 80px;
         margin: auto;
         margin-bottom: 30px;
         display: block;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import Head from 'next/head'
 import NormalNav from '../components/normal-nav'
 import Content from '../components/content'
@@ -18,7 +18,7 @@ const About = () => (
 
     <Content>
 
-      <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5, duration: 1.5}}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1.5 }}>
         <h2>Welcome to Code Blue, our 2020 CAS Project.</h2>
       </motion.div>
 
@@ -30,10 +30,10 @@ const About = () => (
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 6, duration: 2 }}>
         <h3>Please give us feedback!</h3>
         <p>We would like to hear your opinion about this app.</p>
-        <RatingPage/>
+        <RatingPage />
       </motion.div>
 
-      <br/>
+      <br />
 
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 8, duration: 1 }}>
         <h3>Acknowledgements</h3>

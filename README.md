@@ -30,9 +30,9 @@ The UI layout was designed on Figma, and the prototype can be viewed [here](http
   - [x] Add basic view layout and static content
 2. ABOUT SCREEN
   - [x] Add basic view layout and static content
-  - [ ] Add rating mechanism for feedback
+  - [x] Add rating mechanism for feedback
 3. MEDITATION SCREEN
-  - [ ] Add basic view layout
+  - [x] Add basic view layout
   - [ ] Embed click-and-play audio files of meditation sessions to appropriate boxes
 4. SCHEDULER SCREEN
   - [x] Add basic view layout

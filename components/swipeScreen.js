@@ -1,9 +1,9 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
-const height = 460;
+const height = 425;
 const padding = 20;
-const size = 360; //width
+const size = 275; //width
 
 function Slide1() {
   return (
@@ -56,24 +56,25 @@ function SwipeScreen() {
   return (
     <motion.div
       style={{
-        width: 400,
-        height: 500,
+        width: 300,
+        height: 470,
         borderRadius: 30,
         overflow: "hidden",
         position: "relative",
         transform: "translateZ(0)",
-        cursor: "grab"
+        cursor: "grab",
+        margin: "0 auto"
       }}
       whileTap={{ cursor: "grabbing" }}
     >
       <motion.div
         style={{
-          width: 2250,
-          height: 500
+          width: 1825,
+          height: 470,
         }}
         drag="x"
         dragConstraints={{
-          left: -1810,
+          left: -1475,
           right: 0
         }}
       >

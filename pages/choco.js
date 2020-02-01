@@ -16,7 +16,7 @@ const Choco = () => (
     </NormalNav>
 
     <Content>
-      
+
       <h1>Contribute!</h1>
 
       <div className="explanation">
@@ -29,7 +29,7 @@ const Choco = () => (
 
       </div>
 
-      <ChocoForm/>
+      <ChocoForm />
 
     </Content>
 

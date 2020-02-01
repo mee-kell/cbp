@@ -30,6 +30,7 @@ const HomeNav = () => (
       }
       img {
         height: 6vh;
+        min-height: 40px;
       }
       nav {
         text-align: center;
@@ -37,6 +38,7 @@ const HomeNav = () => (
         background: #26A8E2;
         border: 1px #26A8E2 solid;
         height: 10vh;
+        min-height: 80px;
         margin-bottom: 1vh;
       }
       ul {
@@ -59,9 +61,9 @@ const HomeNav = () => (
         color: black;
       }
       #about-text {
-        position: absolute;
-        top: 4vh;
-        right: 20px;
+        position: relative;
+        top: 10px;
+        right: -10px;
       }
       #welcome {
         display: inline-block:

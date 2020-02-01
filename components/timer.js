@@ -1,7 +1,7 @@
 import React from "react";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import ChangingProgressProvider from "./ChangingProgressProvider";
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 let secondsArray = new Array(1500);
 for (let i = 0; i < 1500; i++) {
@@ -21,11 +21,11 @@ class Timer extends React.Component {
   };
 
   showTimer() {
-    this.setState ({visibility: true})
+    this.setState({ visibility: true })
   }
 
   hideTimer() {
-    this.setState ({visibility: false});
+    this.setState({ visibility: false });
   }
 
   render() {
@@ -34,7 +34,7 @@ class Timer extends React.Component {
 
     if (visibility === true) {
 
-      return(
+      return (
         <div>
 
           <ChangingProgressProvider values={secondsArray}>
@@ -105,7 +105,7 @@ class Timer extends React.Component {
             }
 
           `}</style>
-        
+
         </div>
       );
 
@@ -117,7 +117,7 @@ class Timer extends React.Component {
           <div className="button-box">
             <button onClick={this.showTimer}></button>
 
-          <style>{`
+            <style>{`
             button {
               width: 30vw;
               height: 30vw;

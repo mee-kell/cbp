@@ -10,14 +10,9 @@
   "dependencies": {
     "firebase": "^7.8.0",
     "framer-motion": "^1.8.3",
-    "moment": "^2.24.0",
     "next": "9.2.0",
-    "nprogress": "^0.2.0",
-    "pretty-ms": "^5.1.0",
     "react": "16.12.0",
     "react-circular-progressbar": "^2.0.3",
-    "react-countdown-circle-timer": "^1.0.6",
-    "react-dom": "16.12.0",
-    "react-native-countdown-circle": "^3.0.1"
+    "react-dom": "16.12.0"
   }
 }

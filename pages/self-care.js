@@ -2,9 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import NormalNav from '../components/normal-nav'
 import Content from '../components/content'
-import Checkup from '../components/checkup/checkup'
 import { motion } from 'framer-motion'
-import HelpContact from '../components/checkup/helpcontact'
+import Help from '../components/checkup/helpcontact'
 
 const SelfCare = () => (
   <div className="self-care">
@@ -19,10 +18,8 @@ const SelfCare = () => (
 
     <Content>
 
-      <Checkup />
+      <Help />
 
-      <HelpContact />
-      
     </Content>
 
     <style jsx>{`

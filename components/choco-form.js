@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const ChocoForm = () => {
   const [contact, setContact] = useState({
@@ -52,52 +52,52 @@ const ChocoForm = () => {
 
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2, duration: 1.5 }}>
 
-    <div className = "form">
-    
-    <div className='form-content'>
-      <h2>Join the Choco Project</h2>
+      <div className="form">
 
-      <form action='https://api.staticforms.xyz/submit' method='post' onSubmit ={handleSubmit}>
+        <div className='form-content'>
+          <h2>Join the Choco Project</h2>
 
-        <div className='field'>
-          <label className='label'>Enter the locker number of someone who needs cheering up.</label>
-          <div className='control'>
-            <input className='input' type='text' placeholder='Locker Number' name='name' onChange={handleChange} required/>
-          </div>
+          <form action='https://api.staticforms.xyz/submit' method='post' onSubmit={handleSubmit}>
+
+            <div className='field'>
+              <label className='label'>Enter the locker number of someone who needs cheering up.</label>
+              <div className='control'>
+                <input className='input' type='text' placeholder='Locker Number' name='name' onChange={handleChange} required />
+              </div>
+            </div>
+
+            <div className='field'>
+              <label className='label'>Add your message!</label>
+              <div className='control'>
+                <textarea
+                  className='textarea'
+                  placeholder='Your Message'
+                  name='message'
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
+
+            <div className='field'>
+              <div className='control'>
+                <button className='button' type='submit'>Submit</button>
+              </div>
+            </div>
+
+          </form>
+
         </div>
 
-        <div className='field'>
-          <label className='label'>Add your message!</label>
-          <div className='control'>
-            <textarea
-              className='textarea'
-              placeholder='Your Message'
-              name='message'
-              onChange={handleChange}
-              required
-            />
-          </div>
+        <div className={response.type === 'submitted' ? 'tile box notification is-primary' : 'is-hidden'}>
+          <p id="notif">{response.message}</p>
         </div>
 
-        <div className='field'>
-          <div className='control'>
-            <button className='button' type='submit'>Submit</button>
-          </div>
-        </div>
-
-      </form>
-
-    </div>
-
-    <div className={response.type === 'submitted' ? 'tile box notification is-primary' : 'is-hidden'}>
-      <p id="notif">{response.message}</p>
-    </div>
-
-      <style jsx>{`
+        <style jsx>{`
 
         .form {
           border-radius: 15px;
-          padding: 20px;
+          padding: 15px;
           background: #2254ab;
           color: white;
           margin-bottom: 5vh;
@@ -146,7 +146,7 @@ const ChocoForm = () => {
 
       `}</style>
 
-    </div>
+      </div>
 
     </motion.div>
 

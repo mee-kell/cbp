@@ -18,12 +18,12 @@ const Relax = () => (
     <Content>
       <h1>Stressed out?</h1>
       <p>Relax with meditation audios from Mr Colonel.</p>
-      <br/>
+      <br />
 
       <div className="swipe">
         <SwipeScreen />
       </div>
-  
+
     </Content>
 
     <style jsx>{`
@@ -38,8 +38,8 @@ const Relax = () => (
 
       .swipe {
         margin: 0 auto;
-        width: 400px;
-        height: 500px;
+        width: 85vw;
+        height: 500px
       }
       
     `}</style>
