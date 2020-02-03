@@ -46,7 +46,7 @@ const About = () => (
       .about {
         background: #26A8E2;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         margin: 0 auto;
         font-family: Avenir Next, sans-serif;
       }

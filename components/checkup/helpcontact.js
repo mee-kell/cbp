@@ -8,8 +8,7 @@ const sidebar = {
     clipPath: `inset(0 0 0 0)`,
     transition: {
       type: "spring",
-      stiffness: 20,
-      restDelta: 2
+      duration: 2
     }
   },
   closed: {
@@ -34,60 +33,52 @@ const Help = props => {
 
       <Checkup />
 
-      <motion.div
+      <motion.button
         initial={{ y: 500 }}
         animate={{ y: 0 }}
         transition={{ ease: "easeOut", duration: 2 }}
-        className="help"
+        className="contacts"
       >
-        <motion.button
-          initial={false}
-          animate={isOpen ? "open" : "closed"}
-          ref={containerRef}
-          variants={sidebar}
-          className="contacts"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <ul>
-            <h1>How can I get help?</h1>
-            <p>School Counsellors</p>
-            <li>Panda Lee</li>
-            <li>Samantha Yip</li>
-            <li>Gillian Cheung</li>
-            <p>Hotlines</p>
-            <li>24/7 Suicide Prevention: 2382 0000</li>
-            <li>Youth Outreach: 9088 1023</li>
-          </ul>
-        </motion.button>
+        <ul>
+          <h1>How can I get help?</h1>
+          <p>School Counsellors</p>
+          <li>Panda Lee: B505</li>
+          <li>Samantha Yip: B504</li>
+          <li>Gillian Ip: B507</li>
+          <p>Hotlines</p>
+          <li>24/7 Suicide Prevention: 2382 0000</li>
+          <li>Youth Outreach: 9088 1023</li>
+        </ul>
 
         <style>{`
 
-        .help {
-          width: 79vw;
-          height: 5vh;
-          border-radius: 0 0 20px 20px;
-          background-color: black;
-          margin: 0 auto;
-          position: relative;
-        }
-
         .contacts {
-          width: 100%;
-          height: 30vh;
-          min-height: 285px;
+          display: block;
+          width: 79vw;
+          height: 25vh;
+          min-height: 260px;
+
           margin: 0 auto;
-          border-radius: 0 0 20px 20px;
           background-color: black;
           color: white;
+          
           padding: 10px;
           padding-top: 0;
           border: 0;
+          border-radius: 0 0 20px 20px;
+
+          clip-path: inset(0 0 77.5% 0);
+          transition: clip-path 1s;
+        }
+
+        .contacts:hover, .contacts:active, .contacts:visited {
+          clip-path: inset(0 0 0 0);
+          transition: clip-path 1s;
         }
 
         ul {
           text-align: center;
           padding: 0;
-          margin-top: -2vh;
         }
 
         ul h1 {
@@ -108,7 +99,7 @@ const Help = props => {
 
       `}</style>
 
-      </motion.div>
+      </motion.button>
 
     </div>
   )
