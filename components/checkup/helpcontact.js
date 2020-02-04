@@ -83,6 +83,7 @@ const Help = props => {
 
         ul h1 {
           font-size: 22px;
+          margin-top: -2vh;
         }
 
         li {

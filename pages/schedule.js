@@ -11,11 +11,12 @@ const Schedule = () => {
     <div className="schedule">
       <Head>
         <title>Schedule</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="public/logo.png" />
+        <link rel="manifest" href="manifest.webmanifest" />
       </Head>
 
       <NormalNav>
-        <h1>Schedule</h1>
+        Schedule
       </NormalNav>
 
       <Content>
@@ -27,14 +28,12 @@ const Schedule = () => {
         </motion.div>
 
         <div className="instructions">
-          <p>
-            <ol>
-              <li>Choose a task to be accomplished.</li>
-              <li>Press play and work for 25 minutes.</li>
-              <li>Take a 5 minute break when the timer ends.</li>
-              <li>Start again!</li>
-            </ol>
-          </p>
+          <ol>
+            <li>Choose a task to be accomplished.</li>
+            <li>Press play and work for 25 minutes.</li>
+            <li>Take a 5 minute break when the timer ends.</li>
+            <li>Start again!</li>
+          </ol>
         </div>
 
       </Content>

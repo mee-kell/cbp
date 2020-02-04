@@ -1,0 +1,17 @@
+{
+  "name": "Code Blue",
+  "short_name": "Code Blue",
+  "theme_color": "#26a8e2",
+  "background_color": "#26a8e2",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

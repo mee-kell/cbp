@@ -12,15 +12,15 @@ const NormalNav = props => (
           </Link>
         </motion.div>
       </li>
-      <motion.div
-        initial={{ x: 500 }}
-        animate={{ x: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <li className="title">
-          <p>{props.children}</p>
+      <li>
+        <motion.div
+          initial={{ x: 500 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1 }}
+        >
+            <h1>{props.children}</h1>
+        </motion.div>
         </li>
-      </motion.div>
     </ul>
 
     <style jsx>{`
@@ -45,29 +45,23 @@ const NormalNav = props => (
         display: flex;
         justify-content: space-between;
         margin: 0;
-      }
-      nav > ul {
         padding: 4px 16px;
         padding-right: 0;
+        align-items: center;
       }
       li {
         display: flex;
+        align-content: center;
       }
-      .title {
-        margin-top: -1.5vh;
-        margin-right: 0;
-        font-size: 2.5vh;
+      h1 {
+        padding-right: 5vw;
+        text-align: right;
         color: white;
         background: black;
         height: 7vh;
         width: 66vw;
-        display: block;
-      }
-      p {
-        padding-right: 5vw;
-        text-align: right;
-        position: relative;
-        top: 10px;
+        line-height: 7vh;
+        margin: 0;
       }
     `}</style>
   </nav>

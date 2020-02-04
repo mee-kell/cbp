@@ -9,11 +9,12 @@ const About = () => (
   <div className="about">
     <Head>
       <title>About</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="public/logo.png" />
+      <link rel="manifest" href="manifest.webmanifest" />
     </Head>
 
     <NormalNav>
-      <h1>About Us</h1>
+      About Us
     </NormalNav>
 
     <Content>

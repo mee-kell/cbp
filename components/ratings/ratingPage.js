@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import StarRating from './rating';
 import CodeBlueRef from '../../firebase';
 import firebase from 'firebase';
+import 'firebase/firestore';
 import { motion } from 'framer-motion';
 
 class RatingPage extends Component {

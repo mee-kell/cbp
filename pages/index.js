@@ -3,55 +3,79 @@ import { motion } from 'framer-motion';
 import Head from 'next/head'
 import HomeNav from '../components/home-nav'
 
-const Home = () => (
-  <div className="home">
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+class Home extends React.Component {
 
-    <HomeNav />
+  componentDidMount() {
 
-    <motion.div
-      initial={{ y: 500 }}
-      animate={{ y: 0 }}
-      transition={{ ease: "easeOut", duration: 1.5 }}
-    >
-      <div className="menu">
+    window.addEventListener('load', () => {
+      registerSW();
+    });
 
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
-          <a href="/relax" className="card" id="relax">
-            <h3>Relax</h3>
-            <p>Meditate and unwind.</p>
-          </a>
+    async function registerSW() {
+      if ('serviceWorker' in navigator) {
+        try {
+          await navigator.serviceWorker.register('sw.js');
+        } catch (e) {
+          console.log(`SW registration failed`);
+        }
+      }
+    }
+
+  }
+
+  render() {
+    return (
+      <div className="home">
+        <Head>
+          <title>Home</title>
+          <meta name="Code Blue" content="A mental health app"></meta>
+          <meta name="theme-color" content="#26A8E2" />
+          <link rel="icon" href="public/logo.png" />
+          <link rel="manifest" href="manifest.webmanifest" />
+        </Head>
+
+        <HomeNav />
+
+        <motion.div
+          initial={{ y: 500 }}
+          animate={{ y: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
+          <div className="menu">
+
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
+              <a href="/relax" className="card" id="relax">
+                <h3>Relax</h3>
+                <p>Meditate and unwind.</p>
+              </a>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
+              <a href="/schedule" className="card" id="schedule">
+                <h3>Schedule</h3>
+                <p>Organise your time wisely.</p>
+              </a>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
+              <a href="/self-care" className="card" id="self-care">
+                <h3>Well-being</h3>
+                <p>Check your mental health.</p>
+              </a>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
+              <a href="/choco" className="card" id="choco">
+                <h3>Contribute</h3>
+                <p>Join the Choco Project.</p>
+              </a>
+            </motion.div>
+
+          </div>
+
         </motion.div>
 
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
-          <a href="/schedule" className="card" id="schedule">
-            <h3>Schedule</h3>
-            <p>Organise your time wisely.</p>
-          </a>
-        </motion.div>
-
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
-          <a href="/self-care" className="card" id="self-care">
-            <h3>Well-being</h3>
-            <p>Check your mental health.</p>
-          </a>
-        </motion.div>
-
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.05 }}>
-          <a href="/choco" className="card" id="choco">
-            <h3>Contribute</h3>
-            <p>Join the Choco Project.</p>
-          </a>
-        </motion.div>
-
-      </div>
-
-    </motion.div>
-
-    <style jsx>{`
+        <style jsx>{`
       .home {
         background: #26A8E2;
         width: 100vw;
@@ -107,7 +131,9 @@ const Home = () => (
       }
     `}</style>
 
-  </div>
-)
+      </div>
+    )
+  }
+}
 
 export default Home

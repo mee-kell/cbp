@@ -8,11 +8,12 @@ const Relax = () => (
   <div className="relax">
     <Head>
       <title>Relax</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="public/logo.png" />
+      <link rel="manifest" href="manifest.webmanifest" />
     </Head>
 
     <NormalNav>
-      <h1>Meditation</h1>
+      Meditation
     </NormalNav>
 
     <Content>

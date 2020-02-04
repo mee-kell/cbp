@@ -8,11 +8,12 @@ const Choco = () => (
   <div className="choco">
     <Head>
       <title>Contribute</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="public/logo.png" />
+      <link rel="manifest" href="manifest.webmanifest" />
     </Head>
 
     <NormalNav>
-      <h1>Choco Project</h1>
+      Choco Project
     </NormalNav>
 
     <Content>

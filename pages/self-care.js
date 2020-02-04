@@ -2,18 +2,18 @@ import React from 'react'
 import Head from 'next/head'
 import NormalNav from '../components/normal-nav'
 import Content from '../components/content'
-import { motion } from 'framer-motion'
 import Help from '../components/checkup/helpcontact'
 
 const SelfCare = () => (
   <div className="self-care">
     <Head>
       <title>Well-being</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="public/logo.png" />
+      <link rel="manifest" href="manifest.webmanifest" />
     </Head>
 
     <NormalNav>
-      <h1>Well-being</h1>
+      Well-being
     </NormalNav>
 
     <Content>
@@ -26,13 +26,15 @@ const SelfCare = () => (
       .self-care {
         background: #f5c842;
         width: 100vw;
-        height: 100%;
+        height: 100vh;
+        min-height: 600px;
         margin: 0 auto;
         font-family: Avenir Next, sans-serif;
       }
 
-      h1 {
-        font-size: 3.5vh;
+      .title {
+        position: relative;
+        top: 2vh;
       }
       
     `}</style>
