@@ -28,9 +28,10 @@ class Home extends React.Component {
       <div className="home">
         <Head>
           <title>Home</title>
-          <meta name="Code Blue" content="A mental health app"></meta>
+          <meta name="description" content="A mental health app designed for YC students."></meta>
           <meta name="theme-color" content="#26A8E2" />
           <link rel="icon" href="public/logo.png" />
+          <link rel="apple-touch-icon" href="public/logo.png" />
           <link rel="manifest" href="manifest.webmanifest" />
         </Head>
 
@@ -39,7 +40,7 @@ class Home extends React.Component {
         <motion.div
           initial={{ y: 500 }}
           animate={{ y: 0 }}
-          transition={{ ease: "easeOut", duration: 1 }}
+          transition={{ ease: "easeOut", duration: 1.2 }}
         >
           <div className="menu">
 

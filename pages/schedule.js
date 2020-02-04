@@ -11,7 +11,10 @@ const Schedule = () => {
     <div className="schedule">
       <Head>
         <title>Schedule</title>
+        <meta name="description" content="Use the Pomodoro technique to organise your time."></meta>
+        <meta name="theme-color" content="#26A8E2" />
         <link rel="icon" href="public/logo.png" />
+        <link rel="apple-touch-icon" href="public/logo.png"></link>
         <link rel="manifest" href="manifest.webmanifest" />
       </Head>
 

@@ -9,7 +9,10 @@ const About = () => (
   <div className="about">
     <Head>
       <title>About</title>
+      <meta name="description" content="Find out more about Code Blue."></meta>
+      <meta name="theme-color" content="#26A8E2" />
       <link rel="icon" href="public/logo.png" />
+      <link rel="apple-touch-icon" href="public/logo.png"></link>
       <link rel="manifest" href="manifest.webmanifest" />
     </Head>
 
@@ -25,6 +28,7 @@ const About = () => (
 
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5, duration: 2.5 }}>
         <p>Code Blue is a mental health app for YC students, aimed at alleviating academic stress and raising awareness about mental health.</p>
+        <p><b>This app was designed so that you can add it to your home screen.</b></p>
         <p>Code Blue was created by Michelle Lo, Beverly Law, Carmen Vidal Cano and Leyla Ozcan.</p>
       </motion.div>
 

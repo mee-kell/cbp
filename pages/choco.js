@@ -8,7 +8,10 @@ const Choco = () => (
   <div className="choco">
     <Head>
       <title>Contribute</title>
+      <meta name="description" content="Contribute to mental health by joining the Choco Project."></meta>
+      <meta name="theme-color" content="#26A8E2" />
       <link rel="icon" href="public/logo.png" />
+      <link rel="apple-touch-icon" href="public/logo.png"></link>
       <link rel="manifest" href="manifest.webmanifest" />
     </Head>
 

@@ -8,7 +8,10 @@ const Relax = () => (
   <div className="relax">
     <Head>
       <title>Relax</title>
+      <meta name="description" content="Relax and de-stress with meditation sessions."></meta>
+      <meta name="theme-color" content="#26A8E2" />
       <link rel="icon" href="public/logo.png" />
+      <link rel="apple-touch-icon" href="public/logo.png"></link>
       <link rel="manifest" href="manifest.webmanifest" />
     </Head>
 

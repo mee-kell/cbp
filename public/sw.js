@@ -1,12 +1,13 @@
 const cacheName = 'code-blue-pwa';
-const staticAssets = [
+const offlineAssets = [
   '/',
-  'index'
+  'index',
+  'logo.png'
 ];
 
 self.addEventListener('install', async e => {
   const cache = await caches.open(cacheName);
-  await cache.addAll(staticAssets)
+  await cache.addAll(offlineAssets)
     .then(() => console.log('Assets added to cache!'))
     .catch(err => console.log('Error while fetching assets!', err));
   return self.skipWaiting();

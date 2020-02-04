@@ -8,7 +8,10 @@ const SelfCare = () => (
   <div className="self-care">
     <Head>
       <title>Well-being</title>
+      <meta name="description" content="Check your mental health and find help."></meta>
+      <meta name="theme-color" content="#26A8E2" />
       <link rel="icon" href="public/logo.png" />
+      <link rel="apple-touch-icon" href="public/logo.png"></link>
       <link rel="manifest" href="manifest.webmanifest" />
     </Head>
 
